@@ -6,51 +6,268 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
-    <height>600</height>
+    <width>960</width>
+    <height>720</height>
    </rect>
   </property>
+  <property name="minimumSize">
+   <size>
+    <width>960</width>
+    <height>720</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>960</width>
+    <height>720</height>
+   </size>
+  </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>计算器</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QPushButton" name="pushButton">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <widget class="QStackedWidget" name="stackedWidget">
     <property name="geometry">
      <rect>
-      <x>340</x>
-      <y>240</y>
-      <width>93</width>
-      <height>29</height>
+      <x>0</x>
+      <y>0</y>
+      <width>960</width>
+      <height>720</height>
      </rect>
     </property>
-    <property name="text">
-     <string>PushButton</string>
+    <property name="minimumSize">
+     <size>
+      <width>0</width>
+      <height>0</height>
+     </size>
     </property>
+    <property name="maximumSize">
+     <size>
+      <width>16777215</width>
+      <height>16777215</height>
+     </size>
+    </property>
+    <property name="currentIndex">
+     <number>3</number>
+    </property>
+    <widget class="QWidget" name="mainPage">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <widget class="QPushButton" name="startGameButton">
+      <property name="geometry">
+       <rect>
+        <x>410</x>
+        <y>380</y>
+        <width>93</width>
+        <height>29</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>开始游戏</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="settingsButton">
+      <property name="geometry">
+       <rect>
+        <x>410</x>
+        <y>430</y>
+        <width>93</width>
+        <height>29</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>设置</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="helpButton">
+      <property name="geometry">
+       <rect>
+        <x>410</x>
+        <y>480</y>
+        <width>93</width>
+        <height>29</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>帮助</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="exitGameButton">
+      <property name="geometry">
+       <rect>
+        <x>410</x>
+        <y>530</y>
+        <width>93</width>
+        <height>29</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>退出游戏</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="startGamePage">
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>430</x>
+        <y>340</y>
+        <width>221</width>
+        <height>111</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>开始游戏界面</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="startToMainButton">
+      <property name="geometry">
+       <rect>
+        <x>650</x>
+        <y>490</y>
+        <width>93</width>
+        <height>29</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>返回</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="settingsPage">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>460</y>
+        <width>69</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>设置界面</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="settingsToMainButton">
+      <property name="geometry">
+       <rect>
+        <x>680</x>
+        <y>530</y>
+        <width>93</width>
+        <height>29</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>返回</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="helpPage">
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>350</x>
+        <y>180</y>
+        <width>81</width>
+        <height>131</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>帮助页面</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="helpToMainButton">
+      <property name="geometry">
+       <rect>
+        <x>770</x>
+        <y>530</y>
+        <width>93</width>
+        <height>29</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>返回</string>
+      </property>
+     </widget>
+    </widget>
    </widget>
   </widget>
+  <widget class="QStatusBar" name="statusbar"/>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>800</width>
+     <width>960</width>
      <height>26</height>
     </rect>
    </property>
-   <widget class="QMenu" name="menu_F">
+   <widget class="QMenu" name="menuFile">
     <property name="title">
      <string>文件(&amp;F)</string>
     </property>
+    <addaction name="action_O"/>
+    <addaction name="action_S"/>
+    <addaction name="separator"/>
+    <addaction name="action_X"/>
    </widget>
-   <widget class="QMenu" name="menu">
+   <widget class="QMenu" name="menuAbout">
     <property name="title">
      <string>关于(&amp;A)</string>
     </property>
+    <addaction name="action_v1_0_1"/>
    </widget>
-   <addaction name="menu_F"/>
-   <addaction name="menu"/>
+   <addaction name="menuFile"/>
+   <addaction name="menuAbout"/>
   </widget>
-  <widget class="QStatusBar" name="statusbar"/>
+  <action name="action_X">
+   <property name="text">
+    <string>关闭(&amp;X)</string>
+   </property>
+  </action>
+  <action name="action_v1_0_1">
+   <property name="text">
+    <string>拍手游戏v1.0.0</string>
+   </property>
+   <property name="toolTip">
+    <string>拍手游戏v1.0.0</string>
+   </property>
+  </action>
+  <action name="action_O">
+   <property name="text">
+    <string>打开(&amp;O)</string>
+   </property>
+  </action>
+  <action name="action_S">
+   <property name="text">
+    <string>另存为(&amp;S)</string>
+   </property>
+  </action>
  </widget>
  <resources/>
  <connections/>
