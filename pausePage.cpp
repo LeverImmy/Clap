@@ -10,9 +10,9 @@ void MainWindow::on_backToGameButton_clicked()
     ui->stackedWidget->setCurrentIndex(4); // 转到游戏页面，置 index 为 4
 }
 
-void MainWindow::on_exitButton_clicked()
+void MainWindow::on_backToMainPageButton_clicked()
 {
     // ...
     // 提问是否保存
-    this->close();
+    ui->stackedWidget->setCurrentIndex(0); // 回到首页，所以置index为0
 }

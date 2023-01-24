@@ -32,7 +32,7 @@ private slots:
     void on_action_S_triggered(); // 另存为
     void on_action_X_triggered(); // 关闭
     /***关于***/
-    void on_action_v1_0_1_triggered(); // 拍手游戏v1.0.0
+    void on_action_v1_0_0_triggered(); // 拍手游戏v1.0.0
 
     /***首页按钮***/
     void on_startGameButton_clicked(); // 开始游戏
@@ -55,7 +55,7 @@ private slots:
     void on_pauseButton_clicked(); // 暂停
     /***暂停界面按钮***/
     void on_backToGameButton_clicked(); // 返回游戏
-    void on_exitButton_clicked(); // 退出游戏
+    void on_backToMainPageButton_clicked(); // 返回主菜单
 
 private:
     Ui::MainWindow *ui;

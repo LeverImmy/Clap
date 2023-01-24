@@ -51,7 +51,7 @@
      </size>
     </property>
     <property name="currentIndex">
-     <number>5</number>
+     <number>4</number>
     </property>
     <widget class="QWidget" name="mainPage">
      <property name="minimumSize">
@@ -121,7 +121,7 @@
        <string>返回</string>
       </property>
      </widget>
-     <widget class="QWidget" name="">
+     <widget class="QWidget" name="layoutWidget">
       <property name="geometry">
        <rect>
         <x>350</x>
@@ -212,7 +212,7 @@
        <string>返回</string>
       </property>
      </widget>
-     <widget class="QWidget" name="">
+     <widget class="QWidget" name="layoutWidget">
       <property name="geometry">
        <rect>
         <x>150</x>
@@ -251,7 +251,7 @@
        </item>
       </layout>
      </widget>
-     <widget class="QWidget" name="">
+     <widget class="QWidget" name="layoutWidget">
       <property name="geometry">
        <rect>
         <x>150</x>
@@ -348,7 +348,7 @@
       <property name="geometry">
        <rect>
         <x>420</x>
-        <y>330</y>
+        <y>320</y>
         <width>93</width>
         <height>29</height>
        </rect>
@@ -357,17 +357,30 @@
        <string>返回游戏</string>
       </property>
      </widget>
-     <widget class="QPushButton" name="exitButton">
+     <widget class="QPushButton" name="backToMainPageButton">
       <property name="geometry">
        <rect>
         <x>420</x>
-        <y>400</y>
+        <y>430</y>
         <width>93</width>
         <height>29</height>
        </rect>
       </property>
       <property name="text">
-       <string>退出游戏</string>
+       <string>返回主菜单</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>420</x>
+        <y>170</y>
+        <width>151</width>
+        <height>111</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>游戏已暂停</string>
       </property>
      </widget>
     </widget>
@@ -398,7 +411,7 @@
     </property>
     <addaction name="action_rules"/>
     <addaction name="separator"/>
-    <addaction name="action_v1_0_1"/>
+    <addaction name="action_v1_0_0"/>
    </widget>
    <addaction name="menuFile"/>
    <addaction name="menuHelp"/>
@@ -408,7 +421,7 @@
     <string>关闭(&amp;X)</string>
    </property>
   </action>
-  <action name="action_v1_0_1">
+  <action name="action_v1_0_0">
    <property name="text">
     <string>拍手游戏v1.0.0</string>
    </property>
