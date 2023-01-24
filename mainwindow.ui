@@ -51,7 +51,7 @@
      </size>
     </property>
     <property name="currentIndex">
-     <number>2</number>
+     <number>5</number>
     </property>
     <widget class="QWidget" name="mainPage">
      <property name="minimumSize">
@@ -75,7 +75,7 @@
         <height>139</height>
        </rect>
       </property>
-      <layout class="QVBoxLayout" name="verticalLayout">
+      <layout class="QVBoxLayout" name="mainPage_VLayout">
        <item>
         <widget class="QPushButton" name="startGameButton">
          <property name="text">
@@ -108,19 +108,6 @@
      </widget>
     </widget>
     <widget class="QWidget" name="startGamePage">
-     <widget class="QLabel" name="label_3">
-      <property name="geometry">
-       <rect>
-        <x>430</x>
-        <y>340</y>
-        <width>221</width>
-        <height>111</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>开始游戏界面</string>
-      </property>
-     </widget>
      <widget class="QPushButton" name="startToMainButton">
       <property name="geometry">
        <rect>
@@ -133,6 +120,70 @@
       <property name="text">
        <string>返回</string>
       </property>
+     </widget>
+     <widget class="QWidget" name="">
+      <property name="geometry">
+       <rect>
+        <x>350</x>
+        <y>200</y>
+        <width>271</width>
+        <height>271</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="startGamePage_VLayout">
+       <item>
+        <widget class="QPushButton" name="mode1Button">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="text">
+          <string>模式1</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="mode2Button">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="text">
+          <string>模式2</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="mode3Button">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="text">
+          <string>模式3</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="mode4Button">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="text">
+          <string>模式4</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
      </widget>
     </widget>
     <widget class="QWidget" name="settingsPage">
@@ -274,6 +325,49 @@
       </property>
       <property name="text">
        <string>返回</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="playGamePage">
+     <widget class="QPushButton" name="pauseButton">
+      <property name="geometry">
+       <rect>
+        <x>830</x>
+        <y>20</y>
+        <width>93</width>
+        <height>29</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>暂停游戏</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="pausePage">
+     <widget class="QPushButton" name="backToGameButton">
+      <property name="geometry">
+       <rect>
+        <x>420</x>
+        <y>330</y>
+        <width>93</width>
+        <height>29</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>返回游戏</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="exitButton">
+      <property name="geometry">
+       <rect>
+        <x>420</x>
+        <y>400</y>
+        <width>93</width>
+        <height>29</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>退出游戏</string>
       </property>
      </widget>
     </widget>

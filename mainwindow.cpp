@@ -19,7 +19,7 @@ MainWindow::MainWindow(QWidget *parent)
     BGM->setSource(QUrl::fromLocalFile("./resources/bgm.mp3"));
     BGM->setLoops(QMediaPlayer::Infinite);
     BGMOutput->setVolume(0.5f);
-//    BGM->play();
+    BGM->play();
 }
 
 MainWindow::~MainWindow()

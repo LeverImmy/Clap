@@ -20,5 +20,7 @@ void MainWindow::on_helpButton_clicked()
 
 void MainWindow::on_exitGameButton_clicked()
 {
+    // ...
+    // 提问是否保存
     this->close();
 }

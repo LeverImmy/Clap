@@ -26,6 +26,9 @@ set(PROJECT_SOURCES
         startGamePage.cpp
         settingsPage.cpp
         helpPage.cpp
+
+        playGamePage.cpp
+        pausePage.cpp
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)

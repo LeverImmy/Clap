@@ -35,6 +35,8 @@ void MainWindow::on_action_S_triggered()
 }
 void MainWindow::on_action_X_triggered()
 {
+    // ...
+    // 提问是否保存
     this->close();
 }
 

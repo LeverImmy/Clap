@@ -41,14 +41,21 @@ private slots:
     void on_exitGameButton_clicked(); // 退出游戏
     /***开始游戏界面按钮***/
     void on_startToMainButton_clicked(); // 回到首页
+    void on_mode1Button_clicked(); // 模式1
+    void on_mode2Button_clicked(); // 模式2
+    void on_mode3Button_clicked(); // 模式3
+    void on_mode4Button_clicked(); // 模式4
     /***设置界面按钮***/
     void on_settingsToMainButton_clicked(); // 回到首页
+    void on_sound_HSlider_valueChanged(int value); // 音效音量控制条
+    void on_BGM_HSlider_valueChanged(int value); // BGM 音量控制条
     /***帮助界面按钮***/
     void on_helpToMainButton_clicked(); // 回到首页
-
-    void on_BGM_HSlider_valueChanged(int value);
-
-    void on_sound_HSlider_valueChanged(int value);
+    /***游戏界面按钮***/
+    void on_pauseButton_clicked(); // 暂停
+    /***暂停界面按钮***/
+    void on_backToGameButton_clicked(); // 返回游戏
+    void on_exitButton_clicked(); // 退出游戏
 
 private:
     Ui::MainWindow *ui;
