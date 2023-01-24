@@ -18,6 +18,13 @@ set(PROJECT_SOURCES
         mainwindow.cpp
         mainwindow.h
         mainwindow.ui
+
+        menu.cpp
+        mainPage.cpp
+
+        startGamePage.cpp
+        settingsPage.cpp
+        helpPage.cpp
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
