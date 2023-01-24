@@ -9,6 +9,9 @@
 #include <QFileDialog>
 #include <QDebug>
 #include <QKeyEvent>
+#include <QMediaPlayer>
+#include <QSoundEffect>
+#include <QAudioOutput>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -23,7 +26,6 @@ public:
     ~MainWindow();
 
 private slots:
-
     /***菜单栏按钮***/
     /***文件***/
     void on_action_O_triggered(); // 打开
@@ -44,7 +46,13 @@ private slots:
     /***帮助界面按钮***/
     void on_helpToMainButton_clicked(); // 回到首页
 
+    void on_BGM_HSlider_valueChanged(int value);
+
+    void on_sound_HSlider_valueChanged(int value);
+
 private:
     Ui::MainWindow *ui;
+    QMediaPlayer *sound, *BGM;
+    QAudioOutput *soundOutput, *BGMOutput;
 };
 #endif // MAINWINDOW_H

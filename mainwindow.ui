@@ -23,7 +23,7 @@
    </size>
   </property>
   <property name="windowTitle">
-   <string>计算器</string>
+   <string>拍手游戏</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <property name="enabled">
@@ -35,7 +35,7 @@
       <x>0</x>
       <y>0</y>
       <width>960</width>
-      <height>720</height>
+      <height>690</height>
      </rect>
     </property>
     <property name="minimumSize">
@@ -51,7 +51,7 @@
      </size>
     </property>
     <property name="currentIndex">
-     <number>1</number>
+     <number>2</number>
     </property>
     <widget class="QWidget" name="mainPage">
      <property name="minimumSize">
@@ -66,7 +66,7 @@
        <height>16777215</height>
       </size>
      </property>
-     <widget class="QWidget" name="">
+     <widget class="QWidget" name="layoutWidget">
       <property name="geometry">
        <rect>
         <x>440</x>
@@ -148,19 +148,6 @@
        <height>16777215</height>
       </size>
      </property>
-     <widget class="QLabel" name="label_2">
-      <property name="geometry">
-       <rect>
-        <x>240</x>
-        <y>460</y>
-        <width>69</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>设置界面</string>
-      </property>
-     </widget>
      <widget class="QPushButton" name="settingsToMainButton">
       <property name="geometry">
        <rect>
@@ -173,6 +160,93 @@
       <property name="text">
        <string>返回</string>
       </property>
+     </widget>
+     <widget class="QWidget" name="">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>291</y>
+        <width>421</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="sound_HLayout">
+       <item>
+        <widget class="QLabel" name="soundLabel">
+         <property name="text">
+          <string>音效 </string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="soundshowLabel">
+         <property name="text">
+          <string>50</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QSlider" name="sound_HSlider">
+         <property name="maximum">
+          <number>100</number>
+         </property>
+         <property name="value">
+          <number>50</number>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>350</y>
+        <width>421</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="BGM_HLayout">
+       <item>
+        <widget class="QLabel" name="BGMLabel">
+         <property name="text">
+          <string>BGM</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="BGMshowLabel">
+         <property name="text">
+          <string>50</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QSlider" name="BGM_HSlider">
+         <property name="layoutDirection">
+          <enum>Qt::LeftToRight</enum>
+         </property>
+         <property name="maximum">
+          <number>100</number>
+         </property>
+         <property name="pageStep">
+          <number>5</number>
+         </property>
+         <property name="value">
+          <number>50</number>
+         </property>
+         <property name="sliderPosition">
+          <number>50</number>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+      </layout>
      </widget>
     </widget>
     <widget class="QWidget" name="helpPage">
@@ -224,14 +298,16 @@
     <addaction name="separator"/>
     <addaction name="action_X"/>
    </widget>
-   <widget class="QMenu" name="menuAbout">
+   <widget class="QMenu" name="menuHelp">
     <property name="title">
-     <string>关于(&amp;A)</string>
+     <string>帮助(&amp;H)</string>
     </property>
+    <addaction name="action_rules"/>
+    <addaction name="separator"/>
     <addaction name="action_v1_0_1"/>
    </widget>
    <addaction name="menuFile"/>
-   <addaction name="menuAbout"/>
+   <addaction name="menuHelp"/>
   </widget>
   <action name="action_X">
    <property name="text">
@@ -254,6 +330,11 @@
   <action name="action_S">
    <property name="text">
     <string>另存为(&amp;S)</string>
+   </property>
+  </action>
+  <action name="action_rules">
+   <property name="text">
+    <string>游戏规则</string>
    </property>
   </action>
  </widget>
